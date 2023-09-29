@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+
+         /* text shadow  */
+        h1{
+            -webkit-mask : linear-gradient(#000 0 0) ,linear-gradient(#000 0 0);
+            -webkit-mask-clip: text,padding-box;
+            -webkit-mask-composite: xor;
+            text-shadow: 2px 2px #000000;
+            font-size: 250px;
+        }
+
+
+
+    
+/* ..............................blur image ....................  */
+     
+
+        /* Apply backdrop filter blur to the image */
+        .image-container {
+ 
+            width: 300px;
+            height: 200px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(5px); /* Apply a blur effect to the image */
+            z-index: -1; /* Place the image behind other content */
+        }
+
+
+
+
+
+    
+
+
+    </style>
+</head>
+<body>
+    <!-- /* text shadow  */ -->
+    <h1>Aysh And Ghaziyan</h1>
+
+
+ 
+
+    <!-- /* ..............................blur image ....................  */ -->
+    <div class="image-container">
+        <img src="IMG1.jpg" alt="Blurred Image">
+    </div>
+
+</body>
+</html>

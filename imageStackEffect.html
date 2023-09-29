@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 100vh;
+            justify-content: space-around;
+            display: flex;
+            align-items: center;
+        }
+        .inner-item{
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+        }
+        .inner-item img{
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            position: absolute;
+            box-shadow: 5px 5px 4px rgb(192, 123, 123);
+            transition: all 0.8s;
+        }
+        .inner-item:hover :nth-child(1){
+            transform: translate(-10px ,-10px);
+            opacity: 0.4;
+            cursor: pointer;
+        }
+        .inner-item:hover :nth-child(2){
+            transform: translate(-20px ,-20px);
+            opacity: 0.6;
+            cursor: pointer;
+        }
+        .inner-item:hover :nth-child(3){
+            transform: translate(-30px ,-30px);
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        .inner-item:hover :nth-child(4){
+            transform: translate(-40px ,-50px);
+            opacity: 1;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner-item">
+            <img src="IMG1.jpg" alt="">
+            <img src="IMG1.jpg" alt="">
+            <img src="IMG1.jpg" alt="">
+            <img src="IMG1.jpg" alt="">
+        </div>
+        <div class="inner-item">
+            <img src="IMG4.jpg" alt="">
+            <img src="IMG4.jpg" alt="">
+            <img src="IMG4.jpg" alt="">
+            <img src="IMG4.jpg" alt="">
+        </div>
+        <div class="inner-item">
+            <img src="IMG3.jpg" alt="">
+            <img src="IMG3.jpg" alt="">
+            <img src="IMG3.jpg" alt="">
+            <img src="IMG3.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

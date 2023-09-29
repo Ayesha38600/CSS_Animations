@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            list-style: none;
+            text-align: center;
+            padding: 17px;
+            width: 200px;
+            height: 33px;
+            background-color: rgb(3, 49, 49);
+            border: 2px solid rgb(0, 0, 0);
+            color: white;
+     float: left;
+        }
+        nav ul li:hover{
+            background-color: rgb(84, 11, 11);
+            color: rgb(255, 255, 255);
+            transition: 0.5s ease;
+        }
+     ul li ul{
+        margin-top: 31px;
+        margin-left: -19px;
+     }
+     nav ul li ul{
+        display: none;
+     }
+     nav ul li:hover > ul{
+        display: block;
+     }
+     nav ul li ul ul{
+        margin-top: -40px;
+        margin-left: 218px;
+     }
+
+    </style>
+</head>
+<body>
+    <nav>
+  <ul>
+        <li>HOME</li>
+        <li>ABOUT
+            <ul>
+                <li>ABOUT1</li>
+                <li>ABOUT1</li>
+                <li>ABOUT1
+
+                    <ul>
+                        <li>INNER ABOUT</li>
+                        <li>INNER ABOUT</li>
+                        <li>INNER ABOUT</li>
+                    </ul>
+                </li>
+                <li>ABOUT1</li>
+            </ul>
+
+
+        </li>
+        <li>CONTACT</li>
+    </ul>
+    </nav>
+  
+</body>
+</html>

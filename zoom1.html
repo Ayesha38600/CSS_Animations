@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: #000;
+            color: white;
+        }
+        h1{
+            text-align: center;
+        }
+        .image{
+            display: inline-block;
+            text-align: center;
+            width: 33%;
+            /* float: left; */
+        }
+        figure{
+            overflow: hidden;
+            margin: 0 10px;
+        }
+        .image img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .image #zoom-in img{
+transform: scale(1);
+transition: 0.3s ease-in-out;
+        }
+        .image #zoom-in:hover img{
+            transform: scale(1.5);
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Syeda Rubab</h1>
+    <div class="row">
+        <div class="image">
+            <div id="zoom-in">
+                <figure>
+                    <img src="IMG1.jpg" alt="">
+
+                </figure>
+                <h3>Zoom-in</h3>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ut.
+            </div>
+        </div>
+        <div class="image">
+            <div id="zoom-in">
+                <figure>
+                    <img src="IMG1.jpg" alt="">
+
+                </figure>
+                <h3>Zoom-in</h3>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ut.
+            </div>
+        </div>
+        <div class="image">
+            <div id="zoom-in">
+                <figure>
+                    <img src="IMG1.jpg" alt="">
+
+                </figure>
+                <h3>Zoom-in</h3>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ut.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

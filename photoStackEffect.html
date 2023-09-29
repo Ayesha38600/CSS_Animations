@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+div img{
+    width: 800px;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 2px 8px 20px rgb(142, 142, 220);
+    object-fit: cover;
+}
+body{
+    perspective: 800px;
+    background-color: rgb(32, 14, 14);
+}
+
+div{
+    position: sticky;
+    /* position: fixed; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    height: 100vh;
+}
+div:nth-child(1) img{
+    transform: rotate(10deg);
+}
+div:nth-child(2) img{
+    transform: rotate(0deg);
+}
+div:nth-child(3) img{
+    transform: rotate(-10deg);
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+    <div><img src="IMG1.jpg" alt=""></div>
+    <div><img src="IMG2.jpg" alt=""></div>
+    <div><img src="IMG3.jpg" alt=""></div>
+        
+    
+</body>
+</html>

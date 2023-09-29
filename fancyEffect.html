@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            width: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .card{
+            flex-basis: 20%;  
+            transition: 0.4s ease;
+        
+
+        }
+        .card img{
+            width: 100%;
+            border-radius: 26% 74% 58% 42% / 43% 76% 24% 57% ;
+        }
+        .card:hover{
+            filter: grayscale(100%);
+            cursor: pointer;
+        }
+        .card:hover img{
+            border-radius: 5%;
+            transition: 0.4s ease;
+        }
+        h1{
+            text-align: center;
+            margin-top: 35px;
+            padding: 12px;
+            position: relative;
+            opacity: 0;
+            transition: 0.4s linear;
+            color: black;
+        }
+        h1:before{
+            content: "";
+            width: 0%;
+            height: 2px;
+            background-color: rgb(218, 119, 119);
+            position: absolute;
+            bottom: 0;
+            transition: 0.8s linear;
+
+        }
+        .card:hover h1:before{
+            width: 70%;
+
+        }
+        .card:hover h1{
+            opacity: 1;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://images.pexels.com/photos/18067714/pexels-photo-18067714/free-photo-of-beautiful-brunette-woman-posing-on-wooden-chair.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            <h1>Data Scientist</h1>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/18077461/pexels-photo-18077461/free-photo-of-brunette-woman-in-green-dress-posing-on-wooden-railing.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            <h1>Data Scientist</h1>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/18063748/pexels-photo-18063748/free-photo-of-young-elegant-woman-in-a-black-dress-sitting-on-a-chair.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            <h1>Data Scientist</h1>
+        </div>
+    </div>
+</body>
+</html>
