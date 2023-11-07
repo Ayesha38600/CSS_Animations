@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Animated Button</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    perspective: 1000px;
+}
+
+.button {
+    background: #3498db;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+}
+
+.button:hover {
+    transform: translateZ(10px);
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="button">Click Me</button>
+    </div>
+</body>
+</html>
