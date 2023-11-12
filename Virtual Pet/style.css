@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #87CEEB; /* Sky Blue background */
+}
+
+.pet-container {
+    text-align: center;
+}
+
+.pet {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 200px;
+}
+
+.face {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFE4C4; /* Bisque color for the face */
+    border-radius: 50%;
+}
+
+.eyes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.eye {
+    width: 20px;
+    height: 20px;
+    background-color: #000; /* Black for eyes */
+    border-radius: 50%;
+}
+
+.nose, .mouth {
+    width: 10px;
+    height: 10px;
+    background-color: #000; /* Black for nose and mouth */
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mouth {
+    top: 70px;
+}
+
+.body {
+    width: 80px;
+    height: 100px;
+    background-color: #8B4513; /* Saddle Brown for the body */
+    border-radius: 10px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
